@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.zegar {
+    width: 300px;
+    height: 300px;
+    border: 2px solid green;
+    border-radius: 50%;
+    position: relative;
+}
+
+#godzina {
+    width: 2px;
+    height: 150px;
+    border: 1px solid green;
+    background-color: green;
+    margin-left:149px;
+    transform-origin: bottom;
+    animation-name: zegar;
+    animation-iteration-count: infinite;
+    /* animation-duration: 60s; */
+}
+
+#minuta {
+    width: 1px;
+    height: 115px;
+    border: 4px solid #1b67ad;
+    background-color: #1b67ad;
+    margin-left:147px;
+    margin-top: -123px;
+    transform-origin: bottom;
+    animation-name: zegar;
+    animation-iteration-count: infinite;
+    /* animation-duration: 60s; */
+}
+
+#sekunda {
+    width: 1px;
+    height: 80px;
+    border: 6px solid #000;
+    background-color: #000;
+    margin-left:145px;
+    margin-top: -89px;
+    transform-origin: bottom;
+    animation-name: zegar;
+    animation-iteration-count: infinite;
+    border-radius: 10%;
+    /* animation-duration: 60s; */
+}
+
+@keyframes zegar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
