@@ -21,6 +21,7 @@ body {
     transform-origin: bottom;
     animation-name: zegar;
     animation-iteration-count: infinite;
+    transform: rotate(270deg);
     /* animation-duration: 60s; */
 }
 
@@ -34,6 +35,7 @@ body {
     transform-origin: bottom;
     animation-name: zegar;
     animation-iteration-count: infinite;
+    transform: rotate(270deg);
     /* animation-duration: 60s; */
 }
 
@@ -48,14 +50,15 @@ body {
     animation-name: zegar;
     animation-iteration-count: infinite;
     border-radius: 10%;
+    transform: rotate(270deg);
     /* animation-duration: 60s; */
 }
 
-@keyframes zegar {
+/* @keyframes zegar {
     from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
     }
-}
+} */
